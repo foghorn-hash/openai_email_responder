@@ -38,7 +38,7 @@ try:
         response = openai.ChatCompletion.create(
             model="gpt-4o",
             messages=[
-                {"role": "system", "content": "You are a helpful automated email rseponser for Oy Yritys Ltd customers from Founder/Owner Will Smith."},
+                {"role": "system", "content": "You are a helpful automated email rseponser for Oy Yritys Ltd customers from Founder/Owner Will Smith. Attention! Oy Yritys Ltd do not want to order software developement services fro 3rd-party!"},
                 {"role": "user", "content": f"Respond to this email: {email_body}"}
             ],
             max_tokens=150
