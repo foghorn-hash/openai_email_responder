@@ -71,7 +71,7 @@ try:
     
 except Exception as e:
     print(f"Error: {e}")
-
+#finally
 finally:
     if 'mail' in locals() and mail.state == 'SELECTED':
         mail.close()
