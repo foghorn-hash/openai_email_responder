@@ -59,7 +59,7 @@ try:
         reply['From'] = EMAIL_ACCOUNT
         reply['To'] = from_email
         reply['Subject'] = "Re: " + subject
-        reply.attach(MIMEText(reply_text + '\n\nThis is Oy Yritys Ltd AI automatic email response and Oy Yritys Ltd do not have any warranty for what AI will response for you! Attention! If you are trying to sell us your services then stop sendind us emails. We are not interested!', 'plain'))
+        reply.attach(MIMEText(reply_text + '\n\nThis is Oy Yritys Ltd AI automatic email response and Oy Yritys Ltd do not have any warranty for what AI will response for you! Attention! If you are trying to sell us your services then stop sending us emails. We are not interested!', 'plain'))
         
         smtp_server.sendmail(EMAIL_ACCOUNT, from_email, reply.as_string())
         smtp_server.quit()
